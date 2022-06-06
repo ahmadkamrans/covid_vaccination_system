@@ -7,7 +7,7 @@ class ApplicationController < ActionController::Base
   end
   before_action :authenticate_user!
 
-	def after_sign_in_path_for(*)
+  def after_sign_in_path_for(*)
     if current_user&.admin?
       admin_dashboard_index_path
     elsif current_user&.head?
