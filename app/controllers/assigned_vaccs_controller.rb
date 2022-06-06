@@ -1,5 +1,5 @@
 class AssignedVaccsController < ApplicationController
-  before_action :set_assigned_vacc, only: %i[ show edit update destroy ]
+  before_action :set_assigned_vacc, only: %i[show edit update destroy]
 
   # GET /assigned_vaccs or /assigned_vaccs.json
   def index
